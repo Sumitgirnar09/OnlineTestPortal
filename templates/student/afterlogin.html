@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    {% if user.is_authenticated %}
+    <span>Hello, {{request.user.first_name}}</span>
+    <span> {{request.user.last_name}} </span>
+
+    {% endif %}
+  </body>
+</html>
